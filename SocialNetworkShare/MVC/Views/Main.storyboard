@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b0k-NZ-7t4">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ICk-2b-v1j">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" automaticallyAdjustsScrollViewInsets="NO" id="HpG-LN-UNI" customClass="ViewController" customModule="SocialNetworkShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cW4-zX-Gxo"/>
+                        <viewControllerLayoutGuide type="bottom" id="5cW-z3-aIf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eGH-ez-WIn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Networking " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rG-zT-ybw">
+                                <rect key="frame" x="20" y="28" width="280" height="28"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8lt-Bo-eYj">
+                                <rect key="frame" x="20" y="72" width="280" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yT6-bf-Ihq">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_logo" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-mg-Rjc">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Buv-nm-fUE"/>
+                                                    <constraint firstAttribute="width" constant="50" id="TER-zD-4e7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acg-lM-lFI">
+                                                <rect key="frame" x="50" y="0.0" width="2" height="50"/>
+                                                <color key="backgroundColor" red="0.83833300799999999" green="0.83833300799999999" blue="0.83833300799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="2" id="anj-YH-DD3"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDK-8n-zqw">
+                                                <rect key="frame" x="52" y="0.0" width="228" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Facebook">
+                                                    <color key="titleColor" red="0.03921484594" green="0.70231318529999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnFacebookAction:" destination="HpG-LN-UNI" eventType="touchUpInside" id="3aW-Fl-24P"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="acg-lM-lFI" firstAttribute="top" secondItem="yT6-bf-Ihq" secondAttribute="top" id="7Oj-03-co1"/>
+                                            <constraint firstAttribute="bottom" secondItem="acg-lM-lFI" secondAttribute="bottom" id="A9M-HU-kF9"/>
+                                            <constraint firstItem="acg-lM-lFI" firstAttribute="leading" secondItem="vaK-mg-Rjc" secondAttribute="trailing" id="pxj-HE-aml"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehe-eo-PHE">
+                                        <rect key="frame" x="0.0" y="50" width="280" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter_logo" translatesAutoresizingMaskIntoConstraints="NO" id="eNZ-dy-cCd">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="KXf-KE-tSO"/>
+                                                    <constraint firstAttribute="width" constant="50" id="zSn-Sb-bw3"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ey-d8-Hxk">
+                                                <rect key="frame" x="50" y="0.0" width="2" height="50"/>
+                                                <color key="backgroundColor" red="0.83833300799999999" green="0.83833300799999999" blue="0.83833300799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="2" id="3nx-1c-JKm"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUl-Ed-CYp">
+                                                <rect key="frame" x="52" y="0.0" width="228" height="50"/>
+                                                <color key="backgroundColor" red="0.1191380309" green="0.74241288800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Twitter">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnTwitterAction:" destination="HpG-LN-UNI" eventType="touchUpInside" id="6z3-DE-G8S"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="5ey-d8-Hxk" firstAttribute="top" secondItem="Ehe-eo-PHE" secondAttribute="top" id="BhW-fn-ZUb"/>
+                                            <constraint firstAttribute="bottom" secondItem="5ey-d8-Hxk" secondAttribute="bottom" id="rtO-eu-AMq"/>
+                                            <constraint firstItem="5ey-d8-Hxk" firstAttribute="leading" secondItem="eNZ-dy-cCd" secondAttribute="trailing" id="zNj-LZ-QSl"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuU-ys-WnA">
+                                        <rect key="frame" x="0.0" y="100" width="280" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinterest_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ohB-0d-J2d">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="oBb-p8-k50"/>
+                                                    <constraint firstAttribute="width" constant="50" id="rft-gY-RAP"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kP2-CM-LgM">
+                                                <rect key="frame" x="50" y="0.0" width="2" height="50"/>
+                                                <color key="backgroundColor" red="0.83833300799999999" green="0.83833300799999999" blue="0.83833300799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="2" id="c7U-do-ml6"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jb-6x-Y4K">
+                                                <rect key="frame" x="52" y="0.0" width="228" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Pinterest">
+                                                    <color key="titleColor" red="0.03921484594" green="0.70231318529999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnPinterestAction:" destination="HpG-LN-UNI" eventType="touchUpInside" id="deJ-8R-pYc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kP2-CM-LgM" firstAttribute="top" secondItem="SuU-ys-WnA" secondAttribute="top" id="KaM-24-VQ7"/>
+                                            <constraint firstAttribute="bottom" secondItem="kP2-CM-LgM" secondAttribute="bottom" id="dEf-Qa-WKt"/>
+                                            <constraint firstItem="kP2-CM-LgM" firstAttribute="leading" secondItem="ohB-0d-J2d" secondAttribute="trailing" id="zaz-Z2-9lQ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9L-IW-cg7">
+                                        <rect key="frame" x="0.0" y="150" width="280" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr_logo" translatesAutoresizingMaskIntoConstraints="NO" id="SYz-pg-2JN">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="cKY-Qu-e89"/>
+                                                    <constraint firstAttribute="height" constant="50" id="jsT-ZU-t7C"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwy-EH-D3w">
+                                                <rect key="frame" x="50" y="0.0" width="2" height="50"/>
+                                                <color key="backgroundColor" red="0.83833300799999999" green="0.83833300799999999" blue="0.83833300799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="2" id="3Lg-zZ-WfX"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T52-Eu-3mf">
+                                                <rect key="frame" x="52" y="0.0" width="228" height="50"/>
+                                                <color key="backgroundColor" red="0.1191380309" green="0.74241288800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Tumblr">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="funcTumblrAction:" destination="HpG-LN-UNI" eventType="touchUpInside" id="guO-Y5-FgM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SYz-pg-2JN" firstAttribute="leading" secondItem="Q9L-IW-cg7" secondAttribute="leading" id="4Yw-eW-xUx"/>
+                                            <constraint firstItem="wwy-EH-D3w" firstAttribute="top" secondItem="Q9L-IW-cg7" secondAttribute="top" id="kwf-Ib-hUu"/>
+                                            <constraint firstItem="wwy-EH-D3w" firstAttribute="leading" secondItem="SYz-pg-2JN" secondAttribute="trailing" id="l6R-z0-j62"/>
+                                            <constraint firstAttribute="bottom" secondItem="wwy-EH-D3w" secondAttribute="bottom" id="t0c-1x-dx3"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="cYQ-UW-4eQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99560460070000001" green="0.63319857069999996" blue="0.44267278290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8rG-zT-ybw" firstAttribute="top" secondItem="cW4-zX-Gxo" secondAttribute="bottom" constant="8" symbolic="YES" id="E8I-1n-vbX"/>
+                            <constraint firstAttribute="trailing" secondItem="8rG-zT-ybw" secondAttribute="trailing" constant="20" symbolic="YES" id="FIg-Ue-xiM"/>
+                            <constraint firstItem="8rG-zT-ybw" firstAttribute="leading" secondItem="eGH-ez-WIn" secondAttribute="leading" constant="20" symbolic="YES" id="Xos-N1-JiS"/>
+                            <constraint firstItem="8lt-Bo-eYj" firstAttribute="leading" secondItem="eGH-ez-WIn" secondAttribute="leading" constant="20" symbolic="YES" id="eCd-90-VRU"/>
+                            <constraint firstItem="8lt-Bo-eYj" firstAttribute="top" secondItem="8rG-zT-ybw" secondAttribute="bottom" constant="16" id="i9I-jN-gQH"/>
+                            <constraint firstAttribute="trailing" secondItem="8lt-Bo-eYj" secondAttribute="trailing" constant="20" symbolic="YES" id="p4y-ki-jCF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oz5-94-S2u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uDX-tZ-W47" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1776" y="-564"/>
+        </scene>
+        <!--Pinterst View Controller-->
+        <scene sceneID="Q4I-xV-JbG">
+            <objects>
+                <viewController storyboardIdentifier="PinterstViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pFC-aH-Ysr" customClass="PinterstViewController" customModule="SocialNetworkShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jjK-Gv-r9T"/>
+                        <viewControllerLayoutGuide type="bottom" id="kbV-wV-XvS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eGF-kS-UI6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGS-JH-dZc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQW-0q-PdL">
+                                        <rect key="frame" x="15" y="15" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Sps-bR-98d"/>
+                                            <constraint firstAttribute="height" constant="30" id="fbu-5c-1Qe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="&lt; back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnBackAction:" destination="pFC-aH-Ysr" eventType="touchUpInside" id="T8e-7R-SUb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81960784310000001" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="TLR-qH-NYt"/>
+                                    <constraint firstItem="gQW-0q-PdL" firstAttribute="leading" secondItem="iGS-JH-dZc" secondAttribute="leading" constant="15" id="WX1-IE-HVN"/>
+                                    <constraint firstAttribute="bottom" secondItem="gQW-0q-PdL" secondAttribute="bottom" id="zaQ-nk-viR"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pjw-Km-Zjh">
+                                <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0u-3P-IB6">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Create Pin">
+                                            <color key="titleColor" red="0.81960784310000001" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg9-lg-Sib">
+                                        <rect key="frame" x="160" y="0.0" width="160" height="36"/>
+                                        <color key="backgroundColor" red="0.81960784310000001" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Create Board">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCreateBoardAction:" destination="pFC-aH-Ysr" eventType="touchUpInside" id="4hQ-He-WgD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinterest_logo_1" translatesAutoresizingMaskIntoConstraints="NO" id="rry-Xl-4S0">
+                                <rect key="frame" x="25" y="61" width="270" height="76"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztx-x4-QRT">
+                                <rect key="frame" x="122" y="260" width="77" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoginAct:" destination="pFC-aH-Ysr" eventType="touchUpInside" id="3pz-mB-qlE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pjw-Km-Zjh" secondAttribute="trailing" id="063-ue-Ps3"/>
+                            <constraint firstAttribute="trailing" secondItem="iGS-JH-dZc" secondAttribute="trailing" id="3YE-k1-8NQ"/>
+                            <constraint firstItem="iGS-JH-dZc" firstAttribute="leading" secondItem="eGF-kS-UI6" secondAttribute="leading" id="3rZ-1B-rRt"/>
+                            <constraint firstItem="ztx-x4-QRT" firstAttribute="centerX" secondItem="eGF-kS-UI6" secondAttribute="centerX" id="9PP-Oz-n2y"/>
+                            <constraint firstItem="kbV-wV-XvS" firstAttribute="top" secondItem="Pjw-Km-Zjh" secondAttribute="bottom" id="CJw-wC-UQf"/>
+                            <constraint firstItem="rry-Xl-4S0" firstAttribute="top" secondItem="iGS-JH-dZc" secondAttribute="bottom" constant="16" id="Gh8-8p-Nl1"/>
+                            <constraint firstItem="Pjw-Km-Zjh" firstAttribute="leading" secondItem="eGF-kS-UI6" secondAttribute="leading" id="HOb-Lq-fcO"/>
+                            <constraint firstItem="iGS-JH-dZc" firstAttribute="top" secondItem="eGF-kS-UI6" secondAttribute="top" id="N7p-nc-axr"/>
+                            <constraint firstItem="ztx-x4-QRT" firstAttribute="centerY" secondItem="eGF-kS-UI6" secondAttribute="centerY" id="W36-wQ-bSk"/>
+                            <constraint firstItem="rry-Xl-4S0" firstAttribute="centerX" secondItem="eGF-kS-UI6" secondAttribute="centerX" id="zCD-Wd-9HY"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="ztx-x4-QRT" id="wIu-1o-3Od"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hgw-jf-hFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-934" y="282"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="t3q-qg-F1T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="b0k-NZ-7t4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pIw-iS-RoB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HpG-LN-UNI" kind="relationship" relationship="rootViewController" id="ioL-2G-mwf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3m-bK-Z07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2758" y="-417"/>
+        </scene>
+        <!--Twitter View Controller-->
+        <scene sceneID="r03-iG-cBb">
+            <objects>
+                <viewController storyboardIdentifier="TwitterViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zYG-N0-yS6" customClass="TwitterViewController" customModule="SocialNetworkShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iwu-Cg-zNq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gzn-Ks-AWn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bYb-FI-Kid">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuu-ya-XOB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGI-f7-B7d">
+                                        <rect key="frame" x="15" y="15" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SG0-wy-iTx"/>
+                                            <constraint firstAttribute="width" constant="150" id="dvv-Dp-XbM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="&lt; back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnBackAction:" destination="zYG-N0-yS6" eventType="touchUpInside" id="KsY-zp-zre"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1191380309" green="0.74241288800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bGI-f7-B7d" firstAttribute="leading" secondItem="wuu-ya-XOB" secondAttribute="leading" constant="15" id="PWT-Zj-lO0"/>
+                                    <constraint firstAttribute="bottom" secondItem="bGI-f7-B7d" secondAttribute="bottom" id="btu-fq-WGO"/>
+                                    <constraint firstAttribute="height" constant="45" id="kkp-x6-dQf"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="G6I-VA-c0x">
+                                <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHd-58-1sb">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.1191380309" green="0.74241288800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnTwitterLogin:" destination="zYG-N0-yS6" eventType="touchUpInside" id="NY4-VE-TZl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MR-MV-x1b">
+                                        <rect key="frame" x="160" y="0.0" width="160" height="36"/>
+                                        <color key="backgroundColor" red="0.1191380309" green="0.74241288800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnTwitterShare:" destination="zYG-N0-yS6" eventType="touchUpInside" id="eTC-EQ-nOt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hEC-Kv-h0c">
+                                <rect key="frame" x="125" y="249" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="LZB-7h-gdi"/>
+                                    <constraint firstAttribute="width" constant="70" id="d9h-Nv-mvm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhP-in-jH4">
+                                <rect key="frame" x="20" y="61" width="280" height="31.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="26"/>
+                                <color key="textColor" red="0.1191380309" green="0.74241288800000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hEC-Kv-h0c" firstAttribute="centerY" secondItem="bYb-FI-Kid" secondAttribute="centerY" id="1UV-uO-wy0"/>
+                            <constraint firstAttribute="trailing" secondItem="G6I-VA-c0x" secondAttribute="trailing" id="50T-T5-NZz"/>
+                            <constraint firstItem="G6I-VA-c0x" firstAttribute="leading" secondItem="bYb-FI-Kid" secondAttribute="leading" id="A8G-Bb-ISh"/>
+                            <constraint firstAttribute="trailing" secondItem="VhP-in-jH4" secondAttribute="trailing" constant="20" symbolic="YES" id="AOK-u5-hOL"/>
+                            <constraint firstAttribute="trailing" secondItem="wuu-ya-XOB" secondAttribute="trailing" id="NlA-M9-7Me"/>
+                            <constraint firstItem="VhP-in-jH4" firstAttribute="top" secondItem="wuu-ya-XOB" secondAttribute="bottom" constant="16" id="T5R-cL-8RX"/>
+                            <constraint firstItem="wuu-ya-XOB" firstAttribute="leading" secondItem="bYb-FI-Kid" secondAttribute="leading" id="Xeq-fE-1rj"/>
+                            <constraint firstItem="hEC-Kv-h0c" firstAttribute="centerX" secondItem="bYb-FI-Kid" secondAttribute="centerX" id="ahz-tI-N0M"/>
+                            <constraint firstItem="VhP-in-jH4" firstAttribute="leading" secondItem="bYb-FI-Kid" secondAttribute="leading" constant="20" symbolic="YES" id="dmt-um-lAw"/>
+                            <constraint firstItem="wuu-ya-XOB" firstAttribute="top" secondItem="bYb-FI-Kid" secondAttribute="top" id="ooG-sQ-f3v"/>
+                            <constraint firstItem="Gzn-Ks-AWn" firstAttribute="top" secondItem="G6I-VA-c0x" secondAttribute="bottom" id="vGf-QH-CUB"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVX-1F-V1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53" y="-417"/>
+        </scene>
+        <!--Facebook View Controller-->
+        <scene sceneID="dfL-51-s0v">
+            <objects>
+                <viewController storyboardIdentifier="FacebookViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8B0-5v-RRc" customClass="FacebookViewController" customModule="SocialNetworkShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lm5-aE-2Zf"/>
+                        <viewControllerLayoutGuide type="bottom" id="UHi-IU-Fug"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KQu-Hg-T7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGX-Im-m63">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXT-ar-wx8">
+                                        <rect key="frame" x="15" y="15" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="JFa-1e-e4h"/>
+                                            <constraint firstAttribute="height" constant="30" id="JGX-8a-AwN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="&lt; back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnBackAction:" destination="8B0-5v-RRc" eventType="touchUpInside" id="ZJj-QX-G2j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.18379173430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bXT-ar-wx8" secondAttribute="bottom" id="5n0-zR-OWh"/>
+                                    <constraint firstItem="bXT-ar-wx8" firstAttribute="leading" secondItem="UGX-Im-m63" secondAttribute="leading" constant="15" id="Ajo-fl-zpd"/>
+                                    <constraint firstAttribute="height" constant="45" id="anX-rr-Ao7"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iJ7-A3-tMq">
+                                <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1d-cM-FVC">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.0" green="0.18379173430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFacbookLogin:" destination="8B0-5v-RRc" eventType="touchUpInside" id="6U6-3c-9Io"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqr-cD-Gu8">
+                                        <rect key="frame" x="160" y="0.0" width="160" height="36"/>
+                                        <color key="backgroundColor" red="0.0" green="0.18379173430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFacebookShare:" destination="8B0-5v-RRc" eventType="touchUpInside" id="eBX-iX-Gub"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Icb-3P-JOn">
+                                <rect key="frame" x="125" y="249" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Rnh-oh-bcx"/>
+                                    <constraint firstAttribute="width" constant="70" id="yWd-hk-5z1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dk6-9I-2uq">
+                                <rect key="frame" x="20" y="61" width="280" height="31.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.18379173430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dk6-9I-2uq" firstAttribute="top" secondItem="UGX-Im-m63" secondAttribute="bottom" constant="16" id="4Tg-gk-5ku"/>
+                            <constraint firstAttribute="trailing" secondItem="dk6-9I-2uq" secondAttribute="trailing" constant="20" symbolic="YES" id="BNW-v4-JNi"/>
+                            <constraint firstItem="Icb-3P-JOn" firstAttribute="centerX" secondItem="KQu-Hg-T7Y" secondAttribute="centerX" id="Fep-O6-wWc"/>
+                            <constraint firstItem="UGX-Im-m63" firstAttribute="leading" secondItem="KQu-Hg-T7Y" secondAttribute="leading" id="J5a-aQ-4eR"/>
+                            <constraint firstAttribute="trailing" secondItem="UGX-Im-m63" secondAttribute="trailing" id="M2N-lk-hce"/>
+                            <constraint firstItem="dk6-9I-2uq" firstAttribute="leading" secondItem="KQu-Hg-T7Y" secondAttribute="leading" constant="20" symbolic="YES" id="MX0-Fs-0GM"/>
+                            <constraint firstAttribute="trailing" secondItem="iJ7-A3-tMq" secondAttribute="trailing" id="W3q-CR-y1q"/>
+                            <constraint firstItem="iJ7-A3-tMq" firstAttribute="leading" secondItem="KQu-Hg-T7Y" secondAttribute="leading" id="lVy-j2-E5F"/>
+                            <constraint firstItem="UGX-Im-m63" firstAttribute="top" secondItem="KQu-Hg-T7Y" secondAttribute="top" id="uGd-mJ-cuq"/>
+                            <constraint firstItem="UHi-IU-Fug" firstAttribute="top" secondItem="iJ7-A3-tMq" secondAttribute="bottom" id="usp-3O-Lpf"/>
+                            <constraint firstItem="Icb-3P-JOn" firstAttribute="centerY" secondItem="KQu-Hg-T7Y" secondAttribute="centerY" id="viA-j6-3PF"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oed-3j-8K7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-933.75" y="-417.25352112676057"/>
+        </scene>
+        <!--Tumblr View Controller-->
+        <scene sceneID="FYg-f5-elw">
+            <objects>
+                <viewController storyboardIdentifier="TumblrViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c4w-IL-kBr" customClass="TumblrViewController" customModule="SocialNetworkShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r5g-rQ-X20"/>
+                        <viewControllerLayoutGuide type="bottom" id="yR8-ON-Wwt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e8c-UI-YY6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efI-kf-SpI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsO-Ga-Pn7">
+                                        <rect key="frame" x="15" y="15" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="rsi-gx-8E0"/>
+                                            <constraint firstAttribute="width" constant="150" id="tBG-Vi-AAs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="&lt; back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnBackAction:" destination="c4w-IL-kBr" eventType="touchUpInside" id="U6R-Xb-Nab"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.34567858393432549" green="0.38436487518405738" blue="0.40781933069229126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bsO-Ga-Pn7" firstAttribute="leading" secondItem="efI-kf-SpI" secondAttribute="leading" constant="15" id="Dy8-oR-1cp"/>
+                                    <constraint firstAttribute="height" constant="45" id="awK-qX-CPE"/>
+                                    <constraint firstAttribute="bottom" secondItem="bsO-Ga-Pn7" secondAttribute="bottom" id="d30-f9-icX"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iT3-Ho-mrJ">
+                                <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozM-xI-EvZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.3456785839" green="0.38436487520000001" blue="0.40781933069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnTumblrLogin:" destination="c4w-IL-kBr" eventType="touchUpInside" id="tw1-Mk-qFM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijn-CL-jHd">
+                                        <rect key="frame" x="160" y="0.0" width="160" height="36"/>
+                                        <color key="backgroundColor" red="0.3456785839" green="0.38436487520000001" blue="0.40781933069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnTumblrShare:" destination="c4w-IL-kBr" eventType="touchUpInside" id="Yfa-0b-00G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hMb-wZ-pRa">
+                                <rect key="frame" x="125" y="249" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="G8s-Gg-UFi"/>
+                                    <constraint firstAttribute="height" constant="70" id="LgZ-7p-U3U"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tumblr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGs-Hg-dm0">
+                                <rect key="frame" x="20" y="61" width="280" height="31.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="26"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jGs-Hg-dm0" secondAttribute="trailing" constant="20" symbolic="YES" id="0oV-Sy-cvU"/>
+                            <constraint firstItem="hMb-wZ-pRa" firstAttribute="centerY" secondItem="e8c-UI-YY6" secondAttribute="centerY" id="1UM-ns-5Eg"/>
+                            <constraint firstItem="efI-kf-SpI" firstAttribute="leading" secondItem="e8c-UI-YY6" secondAttribute="leading" id="8KL-KQ-tRK"/>
+                            <constraint firstItem="iT3-Ho-mrJ" firstAttribute="leading" secondItem="e8c-UI-YY6" secondAttribute="leading" id="A9N-iY-7it"/>
+                            <constraint firstItem="yR8-ON-Wwt" firstAttribute="top" secondItem="iT3-Ho-mrJ" secondAttribute="bottom" id="Jvw-aF-3Me"/>
+                            <constraint firstItem="jGs-Hg-dm0" firstAttribute="leading" secondItem="e8c-UI-YY6" secondAttribute="leading" constant="20" symbolic="YES" id="OhC-l0-JAE"/>
+                            <constraint firstAttribute="trailing" secondItem="efI-kf-SpI" secondAttribute="trailing" id="RUj-YK-9JJ"/>
+                            <constraint firstItem="jGs-Hg-dm0" firstAttribute="top" secondItem="efI-kf-SpI" secondAttribute="bottom" constant="16" id="S0U-dh-6F2"/>
+                            <constraint firstItem="efI-kf-SpI" firstAttribute="top" secondItem="e8c-UI-YY6" secondAttribute="top" id="UcH-cT-6ZH"/>
+                            <constraint firstItem="hMb-wZ-pRa" firstAttribute="centerX" secondItem="e8c-UI-YY6" secondAttribute="centerX" id="eab-bt-v75"/>
+                            <constraint firstAttribute="trailing" secondItem="iT3-Ho-mrJ" secondAttribute="trailing" id="tjk-6u-70x"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vUF-TI-sTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="281"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook_logo" width="72" height="71"/>
+        <image name="pinterest_logo" width="66" height="63"/>
+        <image name="pinterest_logo_1" width="270" height="76"/>
+        <image name="tumblr_logo" width="105" height="102"/>
+        <image name="twitter_logo" width="72" height="70"/>
+    </resources>
+</document>

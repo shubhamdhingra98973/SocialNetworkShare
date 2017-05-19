@@ -1,0 +1,70 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Fabric (1.6.11)
+  - JXHTTP (3.0.2)
+  - PinterestSDK (1.0.2):
+    - AFNetworking (~> 3.0)
+    - SSKeychain
+  - Spectacles (1.0.1)
+  - SSKeychain (1.4.1)
+  - SwiftyJSON (3.1.4)
+  - TMTumblrSDK (4.0.4):
+    - TMTumblrSDK/Activity (= 4.0.4)
+    - TMTumblrSDK/APIClient (= 4.0.4)
+    - TMTumblrSDK/AppClient (= 4.0.4)
+    - TMTumblrSDK/Core (= 4.0.4)
+  - TMTumblrSDK/Activity (4.0.4)
+  - TMTumblrSDK/APIClient (4.0.4):
+    - JXHTTP
+    - TMTumblrSDK/APIClient/Authentication (= 4.0.4)
+  - TMTumblrSDK/APIClient/Authentication (4.0.4):
+    - JXHTTP
+    - TMTumblrSDK/Core
+  - TMTumblrSDK/AppClient (4.0.4):
+    - TMTumblrSDK/Core
+  - TMTumblrSDK/Core (4.0.4):
+    - Spectacles (~> 1.0)
+  - Toast-Swift (2.0.0)
+  - TwitterCore (2.8.0):
+    - Fabric
+  - TwitterKit (2.8.0):
+    - TwitterCore (= 2.8.0)
+
+DEPENDENCIES:
+  - Fabric
+  - PinterestSDK
+  - SwiftyJSON
+  - TMTumblrSDK
+  - Toast-Swift (~> 2.0.0)
+  - TwitterKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  JXHTTP: c37120f210cd2dfcb3470d70239f5253335e2f1a
+  PinterestSDK: 6c6d92cc749e6520d1b6f1e75410c6fd1d05844c
+  Spectacles: 8dc60711140320653724560e2d6bbb8a8f0940e4
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TMTumblrSDK: 7b253e968a31f515aee0ee5f7e5faa8b7b0d0470
+  Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
+  TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
+  TwitterKit: f7b0a1adcb800f6446ff0ef70164797376522ff3
+
+PODFILE CHECKSUM: d5dcde3efdabf5da6f260d1d56b38948ae5b7b3a
+
+COCOAPODS: 1.2.0
